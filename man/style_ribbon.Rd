@@ -11,7 +11,7 @@ style_ribbon(
   alpha = c(0.3, 0),
   background = "black",
   discard = 0,
-  type = "segment",
+  type = "path",
   ...
 )
 }
