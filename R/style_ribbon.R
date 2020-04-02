@@ -19,7 +19,7 @@ style_ribbon <- function(
   alpha = c(.3, 0),      # initial transparency and decay
   background = "black",
   discard = 0,           # how many of the iterations do we not draw?
-  type = "segment",
+  type = "path",
   ...
 ) {
 
@@ -109,6 +109,9 @@ style_ribbon <- function(
   }
   if(type == "point") {
     pic <- pic + ggplot2::geom_point(show.legend = FALSE, ...)
+  }
+  if(type == "path") {
+    pic <- pic + ggplot2::geom_path(show.legend = FALSE, ...)
   }
 
   return(pic)
