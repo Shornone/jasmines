@@ -46,10 +46,10 @@ style_ribbon <- function(
   }
 
   # min, max
-  #xmin <- min(ribbon$x)
-  #xmax <- max(ribbon$x)
-  #ymin <- min(ribbon$y)
-  #ymax <- max(ribbon$y)
+  xmin <- min(ribbon$x)
+  xmax <- max(ribbon$x)
+  ymin <- min(ribbon$y)
+  ymax <- max(ribbon$y)
 
   # force to the same scale
   #xmin <- min(xmin, ymin)
