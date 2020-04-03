@@ -41,7 +41,7 @@ scene_discs <- function(seed = use_seed(1), points = 100, rings = 3, size = 2) {
 #'
 #' @return a tibble with columns x, y and id
 #' @export
-scene_sticks <- function(seed = use_seed(1), n = 1, grain = 10000) {
+scene_sticks <- function(seed = use_seed(1), n = 10, grain = 100) {
   make_stick <- function(id, grain) {
     return(tibble::tibble(
       x = seq(stats::runif(1), stats::runif(1), length.out = grain),
