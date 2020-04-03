@@ -52,10 +52,10 @@ style_ribbon <- function(
   ymax <- max(ribbon$y)
 
   # force to the same scale
-  #xmin <- min(xmin, ymin)
-  #xmax <- max(xmax, ymax)
-  #ymin <- xmin
-  #ymax <- xmax
+  xmin <- min(xmin, ymin)
+  xmax <- max(xmax, ymax)
+  ymin <- xmin
+  ymax <- xmax
 
   # normalise
   ribbon <- ribbon %>%
