@@ -86,8 +86,8 @@ style_ribbon <- function(
     mapping = ggplot2::aes(
       x = x,
       y = y,
-#      xend = xend,
-#      yend = yend,
+      xend = xend,
+      yend = yend,
       alpha = al,
       colour = factor(order)
     )
