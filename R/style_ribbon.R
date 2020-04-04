@@ -98,8 +98,8 @@ style_ribbon <- function(
 
 #    ggplot2::coord_equal(
     ggplot2::coord_polar(
-#      xlim = c(-.05, 1.05),
-#      ylim = c(-.05, 1.05)
+      xlim = c(-.05, 1.05),
+      ylim = c(-.05, 1.05)
     )
 
   # add the plot information
