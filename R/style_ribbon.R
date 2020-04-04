@@ -96,12 +96,10 @@ style_ribbon <- function(
     ggplot2::scale_alpha_identity() +
     theme_mono(background) +
 
-    ggplot2::coord_equal(
-#    ggplot2::coord_polar(
+#    ggplot2::coord_equal(
+    ggplot2::coord_polar(
 #      xlim = c(-.05, 1.05),
 #      ylim = c(-.05, 1.05)
-      xlim = c(-5, 5),
-      ylim = c(-5, 5)
     )
 
   # add the plot information
