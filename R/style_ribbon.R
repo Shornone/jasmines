@@ -80,26 +80,27 @@ style_ribbon <- function(
   # generate colour set
   col_set <- colours_from(palette, ribbon$order)
 
-  # create basic object
-  pic <- ggplot2::ggplot(
-    data = ribbon %>% dplyr::filter(time > burnin),
-    mapping = ggplot2::aes(
-      x = x,
-      y = y,
-      xend = xend,
-      yend = yend,
-      alpha = al,
-      colour = factor(order)
-    )
-  ) +
-    ggplot2::scale_color_manual(values = col_set) +
-    ggplot2::scale_alpha_identity() +
-    theme_mono(background) +
-    ggplot2::coord_equal(
-      xlim = c(-.05, 1.05),
-      ylim = c(-.05, 1.05)
-    )
-
+ ### # create basic object
+#  pic <- ggplot2::ggplot(
+#    data = ribbon %>% dplyr::filter(time > burnin),
+#    mapping = ggplot2::aes(
+#      x = x,
+#      y = y,
+#      xend = xend,
+#      yend = yend,
+#      alpha = al,
+#      colour = factor(order)
+#    )
+#  ) +
+#    ggplot2::scale_color_manual(values = col_set) +
+#    ggplot2::scale_alpha_identity() +
+#    theme_mono(background) +
+#
+#    ggplot2::coord_equal(
+#      xlim = c(-.05, 1.05),
+#      ylim = c(-.05, 1.05)
+#    )
+####
   # add the plot information
   if(type == "segment") {
     pic <- pic + ggplot2::geom_segment(show.legend = FALSE, ...)
