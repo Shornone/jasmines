@@ -115,6 +115,9 @@ style_ribbon <- function(
   if(type == "path") {
     pic <- pic + ggplot2::geom_path(show.legend = FALSE, ...)
   }
+   if(type == "line") {
+    pic <- pic + ggplot2::geom_line(show.legend = FALSE,aes(group = ind), ...)
+  }
 
   return(pic)
 }
