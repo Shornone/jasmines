@@ -104,16 +104,16 @@ style_ribbon <- function(
 
   # add the plot information
   if(type == "segment") {
-    pic <- pic + ggplot2::geom_segment(show.legend = FALSE, ...)
+    pic <- pic + ggplot2::geom_segment(show.legend = FALSE,aes(group = ind), ...)
   }
   if(type == "curve") {
-    pic <- pic + ggplot2::geom_curve(show.legend = FALSE, ...)
+    pic <- pic + ggplot2::geom_curve(show.legend = FALSE,aes(group = ind), ...)
   }
   if(type == "point") {
-    pic <- pic + ggplot2::geom_point(show.legend = FALSE, ...)
+    pic <- pic + ggplot2::geom_point(show.legend = FALSE,aes(group = ind), ...)
   }
   if(type == "path") {
-    pic <- pic + ggplot2::geom_path(show.legend = FALSE, ...)
+    pic <- pic + ggplot2::geom_path(show.legend = FALSE,aes(group = ind), ...)
   }
    if(type == "line") {
     pic <- pic + ggplot2::geom_line(show.legend = FALSE,aes(group = ind), ...)
