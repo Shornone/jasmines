@@ -113,7 +113,7 @@ style_ribbon <- function(
     pic <- pic + ggplot2::geom_point(show.legend = FALSE,aes(group = ind), ...)
   }
   if(type == "path") {
-    pic <- pic + ggplot2::geom_path(show.legend = FALSE,aes(group = ind), ...)
+    pic <- pic + ggplot2::geom_path(show.legend = FALSE,size = 0.3, alpha = 1, ...)
   }
    if(type == "line") {
     pic <- pic + ggplot2::geom_line(show.legend = FALSE,aes(group = ind), ...)
