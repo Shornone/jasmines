@@ -53,7 +53,7 @@ palette_named <- function(name = NULL, ...) {
     "tokyo", "turku", "vik"
   )
   viridis_names <- c("magma", "inferno", "plasma", "viridis")
-  jasmine_names <- c("ropensci", "blood", "base", "four")
+  jasmine_names <- c("ropensci", "blood", "base", "four", "seven")
   base_names <- c("rainbow")
   all_names <- sort(c(scico_names, viridis_names, jasmine_names, base_names))
 
@@ -77,6 +77,7 @@ palette_named <- function(name = NULL, ...) {
     if(name == "blood") return(palette_blood(...))
     if(name == "base") return(palette_base(...))
     if(name == "four") return(palette_four(...))
+    if(name == "seven") return(palette_seven(...))
   }
   if(name %in% base_names) {
     if(name == "rainbow") return(palette_rainbow(...))
@@ -112,7 +113,13 @@ palette_blood <- function(...) {
 
 palette_four <- function(...) {
   return(palette_manual(
-    "#7c0a02", "#92000a", "#880000", "#8a0303"
+    "#7C0A02", #9F9FF5", "#F0BBBB", "#D9926C", "#2438A6", "#68E68C", "#000000"
+  ))
+}
+
+palette_seven <- function(...) {
+  return(palette_manual(
+    "#7C0A02", #9F9FF5", "#F0BBBB", "#D9926C", "#2438A6", "#68E68C", "#000000"
   ))
 }
 
