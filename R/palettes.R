@@ -113,7 +113,7 @@ palette_blood <- function(...) {
 
 palette_four <- function(...) {
   return(palette_manual(
-    "#7C0A02", "#9F9FF5", "#F0BBBB", "#D9926C", "#2438A6", "#68E68C", "#000000"
+    "#7C0A02", "#9F9FF5", "#D9926C", "#000000"
   ))
 }
 
