@@ -96,10 +96,10 @@ style_ribbon <- function(
     ggplot2::scale_alpha_identity() +
     theme_mono(background) +
 
-    ggplot2::coord_equal(
-#    ggplot2::coord_polar(
-      xlim = c(-.05, 1.05),
-      ylim = c(-.05, 1.05)
+#    ggplot2::coord_equal(
+    ggplot2::coord_polar(
+#      xlim = c(-.05, 1.05),
+#      ylim = c(-.05, 1.05)
     )
 
   # add the plot information
@@ -113,7 +113,7 @@ style_ribbon <- function(
     pic <- pic + ggplot2::geom_point(show.legend = FALSE, ...)
   }
   if(type == "path") {
-    pic <- pic + ggplot2::geom_path(show.legend = FALSE, size = 0.8, alpha = 1, ...)
+    pic <- pic + ggplot2::geom_path(show.legend = FALSE, size = 0.6, alpha = 1, ...)
   }
 
   return(pic)
