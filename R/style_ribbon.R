@@ -113,7 +113,7 @@ style_ribbon <- function(
     pic <- pic + ggplot2::geom_point(show.legend = FALSE, ...)
   }
   if(type == "path") {
-    pic <- pic + ggplot2::geom_path(show.legend = FALSE,size = 0.3, alpha = 1, ...)
+    pic <- pic + ggplot2::geom_path(show.legend = FALSE, size = 0.8, alpha = 1, ...)
   }
 
   return(pic)
